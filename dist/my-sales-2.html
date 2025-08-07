@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="images/icons/logo.svg" alt="logo">
+        </a>
+        <div class="header__box">
+          <ul class="languege">
+            <li class="languege__child">
+              <span> UA</span>
+              <div class="languege__dropdown-wrap">
+                <ul class="languege__dropdown">
+                  <li>
+                    <a href="#">
+                      RU
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      ENG
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <nav class="header__nav">
+            <ul>
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li class="header__has-child">
+                <span>Каталог</span>
+                <ul class="header__child">
+                  <li>
+                    <a href="#">Запчасти</a>
+                  </li>
+                  <li>
+                    <a href="#">Машинокомплекты</a>
+                  </li>
+                  <li>
+                    <a href="#">Двигатели</a>
+                  </li>
+                  <li>
+                    <a href="#">АКПП / МКПП</a>
+                  </li>
+                  <li>
+                    <a href="#">Диски</a>
+                  </li>
+                  <li>
+                    <a href="#">Шины</a>
+                  </li>
+                  <li>
+                    <a href="#">СТО</a>
+                  </li>
+                  <li>
+                    <a href="#">Опт</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__has-child">
+                <span>Информация</span>
+                <ul class="header__child">
+                  <li>
+                    <a href="#">Способ доставки и оплата</a>
+                  </li>
+                  <li>
+                    <a href="#">О проекте</a>
+                  </li>
+                  <li>
+                    <a href="#">Правила сайта</a>
+                  </li>
+                  <li>
+                    <a href="#">Каталог по АПИ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__box-bot">
+            <a href="#" class="header__enter">
+              Вход
+            </a>
+            <a href="#" class="header__registration">
+              <img src="images/icons/registration.svg" alt="icon">
+              Регистрация
+            </a>
+          </div>
+        </div>
+        <a href="#" class="header__basket">
+          <span>99</span>
+          <img src="images/icons/basket.svg" alt="icon">
+        </a>
+        <button class="header__search">
+          <img src="images/icons/search-2.svg" alt="icon">
+        </button>
+        <a href="#" class="header__lk">
+          <img src="images/icons/avatar-1.svg" alt="icon">
+        </a>
+
+        <a href="#" class="header__enter">
+          Вход
+        </a>
+        <a href="#" class="header__registration">
+          <img src="images/icons/registration.svg" alt="icon">
+          Регистрация
+        </a>
+
+        <ul class="languege">
+          <li class="languege__child">
+            <span> UA</span>
+            <div class="languege__dropdown-wrap">
+              <ul class="languege__dropdown">
+                <li>
+                  <a href="#">
+                    RU
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    ENG
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <button class="header__menu-btn">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <div class="underheader">
+        <div class="container">
+          <div class="underheader__inner underheader__inner--cabinet">
+            <div class="cabinet-nav">
+              <a href="#">
+                <div class="cabinet-nav__img">
+                  <img src="images/icons/cabinet-nav.svg" alt="icon">
+                </div>
+                Личные данные
+              </a>
+              <a href="#">
+                <div class="cabinet-nav__img">
+                  <img src="images/icons/cabinet-nav.svg" alt="icon">
+                </div>
+                Мои объявления
+              </a>
+              <a href="#">
+                <div class="cabinet-nav__img">
+                  <img src="images/icons/cabinet-nav.svg" alt="icon">
+                </div>
+                Мои покупки
+              </a>
+              <a class="active" href="#">
+                <div class="cabinet-nav__img">
+                  <img src="images/icons/cabinet-nav.svg" alt="icon">
+                </div>
+                Мои продажи
+              </a>
+              <a href="#">
+                <div class="cabinet-nav__img">
+                  <img src="images/icons/cabinet-nav.svg" alt="icon">
+                </div>
+                Статистика
+              </a>
+              <a href="#">
+                <div class="cabinet-nav__img">
+                  <img src="images/icons/cabinet-nav.svg" alt="icon">
+                </div>
+                Выход
+              </a>
+            </div>
+          </div>
+        </div>
+        <form class="underheader__form underheader__form--desk-none">
+          <div class="underheader__input-wrap">
+            <input type="text" placeholder="Адрес электронной почты" required>
+          </div>
+          <button class="btn"> <span>Поиск</span></button>
+        </form>
+      </div>
+
+
+      <section class="dss-sales dss-sales--twoo">
+        <div class="container">
+          <div class="title-twoo">Мои уведомления</div>
+          <div class="dss-enter__top">
+            <a href="#">в 1 клик <span>2</span></a>
+            <a class="active" href="#">Корзина</a>
+          </div>
+          <div class="dss-sales__bot">
+            <div class="dss-box__filter">
+              <span> Сортировать по:</span>
+              <div class="select">
+                <div class="custom-dropdown custom-dropdown--twoo selected-has-value">
+                  <div class="selected" data-value="1"></div>
+                  <ul class="dropdown-options">
+                    <li data-value="1">Статусу New</li>
+                    <li data-value="2">Конструкционному номеру</li>
+                    <li data-value="3">Цене</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <form class="underheader__form-filter">
+              <div class="underheader__input-wrap-filter">
+                <input type="text" placeholder="Укажите параметры, например: запчасть,марка" required="">
+              </div>
+              <button class="btn"> <span>Поиск</span></button>
+            </form>
+
+            <button class="announcements__search">
+              <img src="images/icons/search.svg" alt="icon">
+            </button>
+          </div>
+          <div class="announcements__bot">
+            <div class="announcements__inf inf-acept">
+              <p>Выбрано объявлений: <span>5</span></p>
+              <div class="announcements__inf-delete">Удалить</div>
+            </div>
+          </div>
+
+          <div class="dss-box__item-wrap">
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <div class="p-item-wrap">
+              <div class="p-item">
+                <div class="p-item__num">Заказ № 123456</div>
+                <div class="p-item__box">
+                  <div class="p-item__date">21.07.25</div>
+                  <div class="p-item__price">2400 zł</div>
+                  <div class="p-status-wrap">
+                    <div class="p-status p-status--one">Новый</div>
+                  </div>
+                  <a href="#" class="btn btn--transparent">Подробнее</a>
+                </div>
+                <button class="p-item__show-btn">
+                  <img src="images/icons/arrow-down.svg" alt="icon">
+                </button>
+              </div>
+              <div class="p-item__bot-wrp">
+                <div class="p-item__bot">
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о товаре</div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+                      </div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+
+                      </div>
+                      <div class="p-item__info-box"></div>
+                      <div class="p-item__bot-info">
+                        <div class="p-item__info-one">Всего</div>
+                        <div class="p-item__info-twoo">3 шт.</div>
+                        <div class="p-item__info-three">2600 zł</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о покупателе</div>
+                      <ul class="p-item__info-list">
+                        <li>
+                          <img src="images/icons/avatar.svg" alt="icon">
+                          <a href="#">Иван Иванов</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mail.svg" alt="icon">
+                          <a href="#">Ivanov@exemple.com</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/phone-2.svg" alt="icon">
+                          <a href="#">+38 (063) 987 6543</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mark-2.svg" alt="icon">
+                          <a href="#">Iндекс</a>
+                          <a href="#">Область</a>
+                          <a href="#">Город</a>
+                          <a href="#">Улица</a>
+                          <a href="#">Дом</a>
+                          <a href="#">Квартира</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о доствке</div>
+                      <div class="p-item__list-title">Выбранные службы</div>
+                      <ul class="p-item__list">
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                      </ul>
+                    </div>
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title-check"> Cчёт фактура</div>
+                      <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        прислать на e-mail
+                      </label>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Комментарий</div>
+                      <div class="p-item__text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Scelerisque in porta aenean iaculis odio ultrices
+                          erat
+                          arcu eu.</p>
+                      </div>
+                    </div>
+                    <div class="p-item__select-title">Статус обработки</div>
+                    <div class="select">
+                      <div class="custom-dropdown custom-dropdown-checkbox">
+                        <div class="selected">Новое</div>
+                        <ul class="dropdown-options">
+                          <li data-value="1">Новое</li>
+                          <li data-value="2">В обработке</li>
+                          <li data-value="3">Отправлен</li>
+                          <li data-value="3">Цене</li>
+                          <li data-value="3">Отменён</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="btn btn--blue">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dss-box__item-wrap">
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <div class="p-item-wrap">
+              <div class="p-item">
+                <div class="p-item__num">Заказ № 123456</div>
+                <div class="p-item__box">
+                  <div class="p-item__date">21.07.25</div>
+                  <div class="p-item__price">2400 zł</div>
+                  <div class="p-status-wrap">
+                    <div class="p-status p-status--one">Новый</div>
+                  </div>
+                  <a href="#" class="btn btn--transparent">Подробнее</a>
+                </div>
+                <button class="p-item__show-btn">
+                  <img src="images/icons/arrow-down.svg" alt="icon">
+                </button>
+              </div>
+              <div class="p-item__bot-wrp">
+                <div class="p-item__bot">
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о товаре</div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+                      </div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+
+                      </div>
+                      <div class="p-item__info-box"></div>
+                      <div class="p-item__bot-info">
+                        <div class="p-item__info-one">Всего</div>
+                        <div class="p-item__info-twoo">3 шт.</div>
+                        <div class="p-item__info-three">2600 zł</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о покупателе</div>
+                      <ul class="p-item__info-list">
+                        <li>
+                          <img src="images/icons/avatar.svg" alt="icon">
+                          <a href="#">Иван Иванов</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mail.svg" alt="icon">
+                          <a href="#">Ivanov@exemple.com</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/phone-2.svg" alt="icon">
+                          <a href="#">+38 (063) 987 6543</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mark-2.svg" alt="icon">
+                          <a href="#">Iндекс</a>
+                          <a href="#">Область</a>
+                          <a href="#">Город</a>
+                          <a href="#">Улица</a>
+                          <a href="#">Дом</a>
+                          <a href="#">Квартира</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о доствке</div>
+                      <div class="p-item__list-title">Выбранные службы</div>
+                      <ul class="p-item__list">
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                      </ul>
+                    </div>
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title-check"> Cчёт фактура</div>
+                      <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        прислать на e-mail
+                      </label>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Комментарий</div>
+                      <div class="p-item__text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Scelerisque in porta aenean iaculis odio ultrices
+                          erat
+                          arcu eu.</p>
+                      </div>
+                    </div>
+                    <div class="p-item__select-title">Статус обработки</div>
+                    <div class="select">
+                      <div class="custom-dropdown custom-dropdown-checkbox">
+                        <div class="selected">Новое</div>
+                        <ul class="dropdown-options">
+                          <li data-value="1">Новое</li>
+                          <li data-value="2">В обработке</li>
+                          <li data-value="3">Отправлен</li>
+                          <li data-value="3">Цене</li>
+                          <li data-value="3">Отменён</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="btn btn--blue">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dss-box__item-wrap">
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <div class="p-item-wrap">
+              <div class="p-item">
+                <div class="p-item__num">Заказ № 123456</div>
+                <div class="p-item__box">
+                  <div class="p-item__date">21.07.25</div>
+                  <div class="p-item__price">2400 zł</div>
+                  <div class="p-status-wrap">
+                    <div class="p-status p-status--one">Новый</div>
+                  </div>
+                  <a href="#" class="btn btn--transparent">Подробнее</a>
+                </div>
+                <button class="p-item__show-btn">
+                  <img src="images/icons/arrow-down.svg" alt="icon">
+                </button>
+              </div>
+              <div class="p-item__bot-wrp">
+                <div class="p-item__bot">
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о товаре</div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+                      </div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+
+                      </div>
+                      <div class="p-item__info-box"></div>
+                      <div class="p-item__bot-info">
+                        <div class="p-item__info-one">Всего</div>
+                        <div class="p-item__info-twoo">3 шт.</div>
+                        <div class="p-item__info-three">2600 zł</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о покупателе</div>
+                      <ul class="p-item__info-list">
+                        <li>
+                          <img src="images/icons/avatar.svg" alt="icon">
+                          <a href="#">Иван Иванов</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mail.svg" alt="icon">
+                          <a href="#">Ivanov@exemple.com</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/phone-2.svg" alt="icon">
+                          <a href="#">+38 (063) 987 6543</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mark-2.svg" alt="icon">
+                          <a href="#">Iндекс</a>
+                          <a href="#">Область</a>
+                          <a href="#">Город</a>
+                          <a href="#">Улица</a>
+                          <a href="#">Дом</a>
+                          <a href="#">Квартира</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о доствке</div>
+                      <div class="p-item__list-title">Выбранные службы</div>
+                      <ul class="p-item__list">
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                      </ul>
+                    </div>
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title-check"> Cчёт фактура</div>
+                      <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        прислать на e-mail
+                      </label>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Комментарий</div>
+                      <div class="p-item__text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Scelerisque in porta aenean iaculis odio ultrices
+                          erat
+                          arcu eu.</p>
+                      </div>
+                    </div>
+                    <div class="p-item__select-title">Статус обработки</div>
+                    <div class="select">
+                      <div class="custom-dropdown custom-dropdown-checkbox">
+                        <div class="selected">Новое</div>
+                        <ul class="dropdown-options">
+                          <li data-value="1">Новое</li>
+                          <li data-value="2">В обработке</li>
+                          <li data-value="3">Отправлен</li>
+                          <li data-value="3">Цене</li>
+                          <li data-value="3">Отменён</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="btn btn--blue">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dss-box__item-wrap">
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <div class="p-item-wrap">
+              <div class="p-item">
+                <div class="p-item__num">Заказ № 123456</div>
+                <div class="p-item__box">
+                  <div class="p-item__date">21.07.25</div>
+                  <div class="p-item__price">2400 zł</div>
+                  <div class="p-status-wrap">
+                    <div class="p-status p-status--one">Новый</div>
+                  </div>
+                  <a href="#" class="btn btn--transparent">Подробнее</a>
+                </div>
+                <button class="p-item__show-btn">
+                  <img src="images/icons/arrow-down.svg" alt="icon">
+                </button>
+              </div>
+              <div class="p-item__bot-wrp">
+                <div class="p-item__bot">
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о товаре</div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+                      </div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+
+                      </div>
+                      <div class="p-item__info-box"></div>
+                      <div class="p-item__bot-info">
+                        <div class="p-item__info-one">Всего</div>
+                        <div class="p-item__info-twoo">3 шт.</div>
+                        <div class="p-item__info-three">2600 zł</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о покупателе</div>
+                      <ul class="p-item__info-list">
+                        <li>
+                          <img src="images/icons/avatar.svg" alt="icon">
+                          <a href="#">Иван Иванов</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mail.svg" alt="icon">
+                          <a href="#">Ivanov@exemple.com</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/phone-2.svg" alt="icon">
+                          <a href="#">+38 (063) 987 6543</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mark-2.svg" alt="icon">
+                          <a href="#">Iндекс</a>
+                          <a href="#">Область</a>
+                          <a href="#">Город</a>
+                          <a href="#">Улица</a>
+                          <a href="#">Дом</a>
+                          <a href="#">Квартира</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о доствке</div>
+                      <div class="p-item__list-title">Выбранные службы</div>
+                      <ul class="p-item__list">
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                      </ul>
+                    </div>
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title-check"> Cчёт фактура</div>
+                      <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        прислать на e-mail
+                      </label>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Комментарий</div>
+                      <div class="p-item__text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Scelerisque in porta aenean iaculis odio ultrices
+                          erat
+                          arcu eu.</p>
+                      </div>
+                    </div>
+                    <div class="p-item__select-title">Статус обработки</div>
+                    <div class="select">
+                      <div class="custom-dropdown custom-dropdown-checkbox">
+                        <div class="selected">Новое</div>
+                        <ul class="dropdown-options">
+                          <li data-value="1">Новое</li>
+                          <li data-value="2">В обработке</li>
+                          <li data-value="3">Отправлен</li>
+                          <li data-value="3">Цене</li>
+                          <li data-value="3">Отменён</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="btn btn--blue">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dss-box__item-wrap">
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <div class="p-item-wrap">
+              <div class="p-item">
+                <div class="p-item__num">Заказ № 123456</div>
+                <div class="p-item__box">
+                  <div class="p-item__date">21.07.25</div>
+                  <div class="p-item__price">2400 zł</div>
+                  <div class="p-status-wrap">
+                    <div class="p-status p-status--one">Новый</div>
+                  </div>
+                  <a href="#" class="btn btn--transparent">Подробнее</a>
+                </div>
+                <button class="p-item__show-btn">
+                  <img src="images/icons/arrow-down.svg" alt="icon">
+                </button>
+              </div>
+              <div class="p-item__bot-wrp">
+                <div class="p-item__bot">
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о товаре</div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+                      </div>
+                      <div class="p-item__bot-wrap">
+                        <div class="p-item__bot-box">
+                          <div class="p-item__box-left">
+                            <div class="dss-sales__article">Артикл продавца <span>12345</span></div>
+                            <div class="p-item__item-title">Зеркало боковое Nissan Primera P12 2002-2007 </div>
+                          </div>
+                          <div class="p-item__box-right">
+                            <div class="p-item__bot-price">500 zł</div>
+                            <div class="p-item__bot-num">2 шт.</div>
+                            <div class="p-item__bot-sum">1000 zł</div>
+                          </div>
+                        </div>
+
+                        <div class="p-item__delivery-wrap">
+                          <div class="p-item__del">Доставка</div>
+                          <div class="p-item__del-price">200 zł</div>
+                        </div>
+
+                      </div>
+                      <div class="p-item__info-box"></div>
+                      <div class="p-item__bot-info">
+                        <div class="p-item__info-one">Всего</div>
+                        <div class="p-item__info-twoo">3 шт.</div>
+                        <div class="p-item__info-three">2600 zł</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о покупателе</div>
+                      <ul class="p-item__info-list">
+                        <li>
+                          <img src="images/icons/avatar.svg" alt="icon">
+                          <a href="#">Иван Иванов</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mail.svg" alt="icon">
+                          <a href="#">Ivanov@exemple.com</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/phone-2.svg" alt="icon">
+                          <a href="#">+38 (063) 987 6543</a>
+                        </li>
+                        <li>
+                          <img src="images/icons/mark-2.svg" alt="icon">
+                          <a href="#">Iндекс</a>
+                          <a href="#">Область</a>
+                          <a href="#">Город</a>
+                          <a href="#">Улица</a>
+                          <a href="#">Дом</a>
+                          <a href="#">Квартира</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Данные о доствке</div>
+                      <div class="p-item__list-title">Выбранные службы</div>
+                      <ul class="p-item__list">
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                        <li>Название службы доставки</li>
+                      </ul>
+                    </div>
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title-check"> Cчёт фактура</div>
+                      <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        прислать на e-mail
+                      </label>
+                    </div>
+                  </div>
+                  <div class="p-item__col">
+                    <div class="p-item__bot-item">
+                      <div class="p-item__title">Комментарий</div>
+                      <div class="p-item__text">
+                        <p>Lorem ipsum dolor sit amet consectetur. Scelerisque in porta aenean iaculis odio ultrices
+                          erat
+                          arcu eu.</p>
+                      </div>
+                    </div>
+                    <div class="p-item__select-title">Статус обработки</div>
+                    <div class="select">
+                      <div class="custom-dropdown custom-dropdown-checkbox">
+                        <div class="selected">Новое</div>
+                        <ul class="dropdown-options">
+                          <li data-value="1">Новое</li>
+                          <li data-value="2">В обработке</li>
+                          <li data-value="3">Отправлен</li>
+                          <li data-value="3">Цене</li>
+                          <li data-value="3">Отменён</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="btn btn--blue">Сохранить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="pagination">
+            <ul>
+              <li><a href="#" class="arrow prev" aria-label="Previous page"><img src="images/icons/arrow-side.svg"
+                    alt="icon"></a></li>
+              <li><a href="#" class="page">1</a></li>
+              <li><a href="#" class="page active">2</a></li>
+              <li><a href="#" class="page">3</a></li>
+              <li><a href="#" class="arrow next" aria-label="Next page"><img src="images/icons/arrow-side.svg"
+                    alt="icon"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <a href="#" class="footer__logo">
+              <img src="images/icons/footer-logo.svg" alt="icon">
+            </a>
+            <ul class="soc">
+              <li>
+                <a href="#">
+                  <img src="images/icons/facebook.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icons/instagram.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icons/twitter.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="#">О проекте</a>
+              </li>
+              <li>
+                <a href="#">Свяжитесь с нами</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="#">Каталог по АПИ </a>
+              </li>
+              <li>
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#">Правила сайта</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">Подписаться на новые объявления </div>
+            <form class="footer__form">
+              <input type="text" placeholder="Адрес электронной почты" required>
+              <button class="btn"> <span>Подписаться</span></button>
+            </form>
+          </div>
+          <div class="footer__col">
+            <ul class="soc">
+              <li>
+                <a href="#">
+                  <img src="images/icons/facebook.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icons/instagram.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icons/twitter.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bot">
+        <div class="container">
+          © 2025
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -52,7 +52,44 @@ $(function () {
 		item.toggleClass('active');  // перемикаємо клас active
 	});
 
-	
+	//
+	$(function () {
+		const $start = $("#start-data");
+		const $end = $("#end-data");
+
+		if ($start.length) {
+			$start
+				.attr("placeholder", "99.99.9999")
+				.datepicker({
+					dateFormat: "dd.mm.yy",
+					maxDate: 0,
+					changeMonth: true,
+					changeYear: true,
+					onClose: function (selectedDate) {
+						$end.datepicker("option", "minDate", selectedDate);
+					}
+				})
+				.datepicker("setDate", new Date());
+		}
+
+		if ($end.length) {
+			$end
+				.attr("placeholder", "99.99.9999")
+				.datepicker({
+					dateFormat: "dd.mm.yy",
+					maxDate: 0,
+					changeMonth: true,
+					changeYear: true,
+					onClose: function (selectedDate) {
+						$start.datepicker("option", "maxDate", selectedDate);
+					}
+				})
+				.datepicker("setDate", new Date());
+		}
+	});
+
+
+
 });
 
 //
