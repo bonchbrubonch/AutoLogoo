@@ -1,0 +1,102 @@
+.btn {
+	position: relative;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	border-radius: .4rem;
+	overflow: hidden;
+	transition: linear .2s;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	width: fit-content;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	&::before {
+		background: linear-gradient(90deg, #00C6FB 0%, #005BEA 100%);
+		opacity: 1;
+	}
+
+	&::after {
+		background: linear-gradient(90deg, #005BEA 0%, #00C6FB 100%);
+		opacity: 0;
+	}
+
+	&:hover::before {
+		opacity: 0;
+	}
+
+	&:hover::after {
+		opacity: 1;
+	}
+
+	span {
+		position: relative;
+		z-index: 2;
+	}
+
+	&--transparent {
+		border: .1rem solid #2762B3 !important;
+		color: #2762B3;
+
+		&::after,
+		&::before {
+			display: none;
+		}
+
+		&:hover {
+			background-color: #2762B3;
+			color: #fff;
+		}
+	}
+
+	&--blue {
+		background-color: #2762B3;
+		color: #fff;
+
+		&::after,
+		&::before {
+			display: none;
+		}
+
+	}
+
+	&--blue-twoo {
+		background-color: #0C8CE9;
+		color: #fff;
+		padding: 1.5rem 1rem;
+		font-size: 1.4rem;
+		border-radius: .8rem;
+
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+
+	&--unclick {
+		background: rgba(106, 106, 106, 0.50);
+		color: #6A6A6A;
+		pointer-events: none;
+
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+}
