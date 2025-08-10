@@ -1,12 +1,25 @@
 $(function () {
 
 	// Header menu child toggle
-	if ($('.header__has-child span').length) {
-		$('.header__has-child span').on('click', function () {
-			$(this).toggleClass('open');
-			$(this).next().slideToggle();
-		});
-	}
+function initMobileMenuToggle() {
+  if ($(window).width() <= 1200) {
+    $('.header__has-child span').off('click.mobileToggle').on('click.mobileToggle', function () {
+      $(this).toggleClass('open');
+      $(this).next().slideToggle();
+    });
+  } else {
+  
+    $('.header__has-child span').off('click.mobileToggle').removeClass('open').each(function () {
+      $(this).next().removeAttr('style');
+    });
+  }
+}
+
+$(document).ready(function() {
+  initMobileMenuToggle();
+  $(window).on('resize', initMobileMenuToggle);
+});
+
 
 	// Accordion
 	if ($(".accordeon dd").length) {
@@ -44,12 +57,12 @@ $(function () {
 	$('.p-item__show-btn').on('click', function (e) {
 		e.preventDefault();
 
-		const wrap = $(this).closest('.p-item-wrap'); // знаходимо .p-item-wrap
-		const item = wrap.find('.p-item');            // знаходимо .p-item в середині wrap
-		const content = wrap.find('.p-item__bot-wrp'); // знаходимо .p-item__bot-wrp
+		const wrap = $(this).closest('.p-item-wrap'); 
+		const item = wrap.find('.p-item');    
+		const content = wrap.find('.p-item__bot-wrp'); 
 
-		content.slideToggle(300);    // показати/сховати блок
-		item.toggleClass('active');  // перемикаємо клас active
+		content.slideToggle(300);  
+		item.toggleClass('active');  
 	});
 
 	//
@@ -93,6 +106,155 @@ $(function () {
 });
 
 //
+document.addEventListener('DOMContentLoaded', () => {
+  const breakpoint = 1200;
+  const body = document.body;
+  const items = document.querySelectorAll('.header__has-child');
+
+  function closeAll() {
+    items.forEach(item => item.classList.remove('open'));
+    // Клас 'dark' прибираємо централізовано через updateBodyDarkClass()
+  }
+
+  function updateBodyDarkClass() {
+    const anyMenuOpen = [...document.querySelectorAll('.header__has-child')].some(item => item.classList.contains('open'));
+    const anyDropdownOpen = document.querySelector('.custom-dropdown.open') !== null;
+    const anyOpen = anyMenuOpen || anyDropdownOpen;
+
+    document.body.classList.toggle('dark', anyOpen);
+  }
+
+  function onClick(event) {
+    if (window.innerWidth <= breakpoint) return;
+
+    const clickedItem = event.target.closest('.header__has-child');
+
+    if (clickedItem) {
+      const isOpen = clickedItem.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        clickedItem.classList.add('open');
+      }
+      updateBodyDarkClass();
+    } else {
+      closeAll();
+      updateBodyDarkClass();
+    }
+  }
+
+  window.addEventListener('click', onClick);
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= breakpoint) {
+      closeAll();
+      updateBodyDarkClass();
+    }
+  });
+
+  // custom dropdown
+  document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
+    const selected = dropdown.querySelector('.selected');
+    const options = dropdown.querySelectorAll('.dropdown-options li');
+    const isMulti = dropdown.classList.contains('custom-dropdown-checkbox');
+    const placeholder = dropdown.dataset.placeholder;
+
+    if (placeholder !== undefined) {
+      selected.textContent = placeholder;
+      selected.setAttribute('data-value', '');
+      dropdown.classList.remove('selected-has-value');
+    } else if (!isMulti && options.length > 0) {
+      const first = options[0];
+      selected.textContent = first.textContent;
+      selected.setAttribute('data-value', first.getAttribute('data-value'));
+      dropdown.classList.add('selected-has-value');
+    }
+
+    selected.addEventListener('click', () => {
+      dropdown.classList.toggle('open');
+      updateBodyDarkClass();
+    });
+
+    options.forEach(option => {
+      option.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        if (isMulti) {
+          option.classList.toggle('checked');
+
+          const selectedOptions = [...options]
+            .filter(opt => opt.classList.contains('checked'))
+            .map(opt => opt.textContent.trim());
+
+          const selectedValues = [...options]
+            .filter(opt => opt.classList.contains('checked'))
+            .map(opt => opt.getAttribute('data-value'));
+
+          if (selectedOptions.length > 0) {
+            selected.textContent = selectedOptions.join(', ');
+            selected.setAttribute('data-value', selectedValues.join(','));
+            dropdown.classList.add('selected-has-value');
+          } else {
+            if (placeholder !== undefined) {
+              selected.textContent = placeholder;
+            } else {
+              selected.textContent = '';
+            }
+            selected.setAttribute('data-value', '');
+            dropdown.classList.remove('selected-has-value');
+          }
+        } else {
+          options.forEach(opt => opt.classList.remove('checked'));
+          option.classList.add('checked');
+          selected.textContent = option.textContent;
+          selected.setAttribute('data-value', option.getAttribute('data-value'));
+          dropdown.classList.remove('open');
+          dropdown.classList.add('selected-has-value');
+          updateBodyDarkClass();
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        updateBodyDarkClass();
+      }
+    });
+  });
+});
+
+
+// окрема функція для керування класом dark у body
+function updateBodyDarkClass() {
+	const anyOpen = document.querySelector('.custom-dropdown.open') !== null;
+	document.body.classList.toggle('dark', anyOpen);
+}
+
+
+//
+document.addEventListener('DOMContentLoaded', () => {
+  const arrows = document.querySelectorAll('.underheader__side-arrow');
+
+  if (!arrows.length) return; 
+
+  arrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+      const parent = arrow.closest('.container');
+      if (!parent) return;
+
+      const inner = parent.querySelector('.underheader__inner');
+      if (!inner) return;
+
+      inner.scrollBy({
+        left: 200,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+
+
+//
 document.querySelectorAll('.pass').forEach(function (el) {
 	el.addEventListener('click', function () {
 		el.classList.toggle('show');
@@ -120,74 +282,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 });
 
-//select
-document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
-	const selected = dropdown.querySelector('.selected');
-	const options = dropdown.querySelectorAll('.dropdown-options li');
-	const isMulti = dropdown.classList.contains('custom-dropdown-checkbox');
-	const placeholder = dropdown.dataset.placeholder;
 
-	if (placeholder !== undefined) {
-		selected.textContent = placeholder;
-		selected.setAttribute('data-value', '');
-		dropdown.classList.remove('selected-has-value');
-	} else if (!isMulti && options.length > 0) {
-		const first = options[0];
-		selected.textContent = first.textContent;
-		selected.setAttribute('data-value', first.getAttribute('data-value'));
-		dropdown.classList.add('selected-has-value');
-	}
-
-	selected.addEventListener('click', () => {
-		dropdown.classList.toggle('open');
-	});
-
-	options.forEach(option => {
-		option.addEventListener('click', (e) => {
-			e.stopPropagation();
-
-			if (isMulti) {
-				option.classList.toggle('checked');
-
-				const selectedOptions = [...options]
-					.filter(opt => opt.classList.contains('checked'))
-					.map(opt => opt.textContent.trim());
-
-				const selectedValues = [...options]
-					.filter(opt => opt.classList.contains('checked'))
-					.map(opt => opt.getAttribute('data-value'));
-
-				if (selectedOptions.length > 0) {
-					selected.textContent = selectedOptions.join(', ');
-					selected.setAttribute('data-value', selectedValues.join(','));
-					dropdown.classList.add('selected-has-value');
-				} else {
-					// показуємо лише плейсхолдер, якщо він є
-					if (placeholder !== undefined) {
-						selected.textContent = placeholder;
-					} else {
-						selected.textContent = '';
-					}
-					selected.setAttribute('data-value', '');
-					dropdown.classList.remove('selected-has-value');
-				}
-			} else {
-				options.forEach(opt => opt.classList.remove('checked'));
-				option.classList.add('checked');
-				selected.textContent = option.textContent;
-				selected.setAttribute('data-value', option.getAttribute('data-value'));
-				dropdown.classList.remove('open');
-				dropdown.classList.add('selected-has-value');
-			}
-		});
-	});
-
-	document.addEventListener('click', (e) => {
-		if (!dropdown.contains(e.target)) {
-			dropdown.classList.remove('open');
-		}
-	});
-});
 
 
 

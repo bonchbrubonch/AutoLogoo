@@ -69,7 +69,6 @@
 		background-color: #2762B3;
 		color: #fff;
 
-		&::after,
 		&::before {
 			display: none;
 		}
@@ -83,14 +82,23 @@
 		font-size: 1.4rem;
 		border-radius: .8rem;
 
-		&::after,
+		span {
+			position: relative;
+			z-index: 2;
+		}
+
 		&::before {
 			display: none;
 		}
+
+		&::after {
+			background: linear-gradient(180deg, rgba(12, 140, 233, 1) 0%, rgba(0, 87, 150, 1) 100%);
+		}
+
 	}
 
 	&--unclick {
-		background: rgba(106, 106, 106, 0.50);
+		background-color: #C5CBD2;
 		color: #6A6A6A;
 		pointer-events: none;
 

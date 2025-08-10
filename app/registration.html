@@ -21,10 +21,6 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.1.0/css/datepicker.min.css"
-    integrity="sha512-mEt69CXdH41K9qBj/MZ54fAyDVV+9Lq/3ElOWl63qHrDUUV4dfYO+8Wou9/fryyc0eplS63V3ICYbDPQ+e0vBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -168,159 +164,91 @@
     <main class="main">
       <div class="underheader">
         <div class="container">
-          <div class="underheader__inner underheader__inner--cabinet">
-            <div class="cabinet-nav">
-              <a href="#">
-                <div class="cabinet-nav__img">
-                  <img src="images/icons/cabinet-nav.svg" alt="icon">
-                </div>
-                Личные данные
-              </a>
-              <a href="#">
-                <div class="cabinet-nav__img">
-                  <img src="images/icons/cabinet-nav.svg" alt="icon">
-                </div>
-                Мои объявления
-              </a>
-              <a href="#">
-                <div class="cabinet-nav__img">
-                  <img src="images/icons/cabinet-nav.svg" alt="icon">
-                </div>
-                Мои покупки
-              </a>
-              <a href="#">
-                <div class="cabinet-nav__img">
-                  <img src="images/icons/cabinet-nav.svg" alt="icon">
-                </div>
-                Мои продажи
-              </a>
-              <a class="active" href="#">
-                <div class="cabinet-nav__img">
-                  <img src="images/icons/cabinet-nav.svg" alt="icon">
-                </div>
-                Статистика
-              </a>
-              <a href="#">
-                <div class="cabinet-nav__img">
-                  <img src="images/icons/cabinet-nav.svg" alt="icon">
-                </div>
-                Выход
-              </a>
-            </div>
+          <div class="underheader__inner">
+            <ul>
+              <li>
+                <a href="#">Запчасти</a>
+              </li>
+              <li>
+                <a href="#">Машинокомплекты</a>
+              </li>
+              <li>
+                <a href="#">Двигатели</a>
+              </li>
+              <li>
+                <a href="#">АКПП / МКПП</a>
+              </li>
+              <li>
+                <a href="#">Диски</a>
+              </li>
+              <li>
+                <a href="#">Шины</a>
+              </li>
+              <li>
+                <a href="#">СТО</a>
+              </li>
+              <li>
+                <a href="#">Опт</a>
+              </li>
+            </ul>
+            <form class="underheader__form">
+              <div class="underheader__input-wrap">
+                <input type="text" placeholder="VIN / название запчасти" required>
+              </div>
+              <button class="btn"> <span>Поиск</span></button>
+            </form>
           </div>
              <div class="underheader__side-arrow">
             <img src="images/icons/arrow-side.svg" alt="icon">
           </div>
         </div>
-        <form class="underheader__form underheader__form--desk-none">
-          <div class="underheader__input-wrap">
-            <input type="text" placeholder="VIN / название запчасти" required>
-          </div>
-          <button class="btn"> <span>Поиск</span></button>
-        </form>
       </div>
 
-
-      <section class="p-statistic">
+      <section class="dss-enter">
         <div class="container">
-          <div class="title-twoo">Статистика</div>
-          <div class="p-statistic__data">
-            <img src="images/icons/date.svg" alt="icon">
-            <div class="p-statistic__datapicker">
-              <input type="text" id="start-data" readonly>
+          <div class="dss-enter__item">
+            <div class="dss-enter__title">Регистрация</div>
+            <div class="dss-enter__info">
+              <p><strong>Создайте</strong> аккаунт. Если у Вас уже есть аккаунт?</p>
+              <a href="#">Войдите</a>
             </div>
-            <span>
-              <img src="images/icons/line-decor.svg" alt="decor">
-            </span>
-            <div class="p-statistic__datapicker">
-              <input type="text" id="end-data" readonly>
-            </div>
+            <form class="form">
+              <div class="dss-enter__top">
+                <a class="active" href="#">Как физ.лицо</a>
+                <a href="#">Как юр.лицо</a>
+              </div>
+              <div class="form__twoo-col">
+                <div class="form__group">
+                  <label>Имя</label>
+                  <input type="text" placeholder="Введите Ваш имя">
+                </div>
+                <div class="form__group">
+                  <label>Email</label>
+                  <input type="text" placeholder="Введите ваш email">
+                </div>
+                <div class="form__group">
+                  <label>Пароль</label>
+                  <input type="password" placeholder="Введите пароль">
+                  <div class="pass">
+                    <img src="images/icons/watch-1.svg" alt="icon">
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label>Подтвердите пароль</label>
+                  <input type="password" placeholder="Введите пароль">
+                  <div class="pass">
+                    <img src="images/icons/watch-1.svg" alt="icon">
+                  </div>
+                </div>
+              </div>
+
+              <div class="dss-enter__bot">
+                <p> Регистрируйся я даю соглашение на обработку персональных данных</p>
+              </div>
+              <button class="btn btn--blue-twoo"><span>Зарегистрироваться</span></button>
+            </form>
+
           </div>
-
-          <div class="p-statistic__wrap">
-            <div class="p-statistic__inner">
-              <div class="p-statistic__top">
-                <div class="p-statistic__col">Артикл</div>
-                <div class="p-statistic__col">Товар</div>
-                <div class="p-statistic__col">Дата публикации/закрытия</div>
-                <div class="p-statistic__col"><img src="images/icons/dec-1.svg" alt="icon"> Жалоб</div>
-                <div class="p-statistic__col"><img src="images/icons/dec-2.svg" alt="icon">Просмотры</div>
-                <div class="p-statistic__col"><img src="images/icons/dec-3.svg" alt="icon">Покупки</div>
-                <div class="p-statistic__col"><img src="images/icons/dec-4.svg" alt="icon">Корзина</div>
-                <div class="p-statistic__col">Цена продажи</div>
-              </div>
-              <div class="p-statistic__item">
-                <div class="p-statistic__col">12345</div>
-                <div class="p-statistic__col">
-                  <div class="p-statistic__img">
-                    <img src="images/content/product-1.jpg" alt="icon">
-                  </div>
-                  <div class="p-statistic__title">Двигатель (ДВС) Fiat Bravo 2007-2010</div>
-                </div>
-                <div class="p-statistic__col"><span>19.07.25</span> / <span>27.08.25</span></div>
-                <div class="p-statistic__col">0</div>
-                <div class="p-statistic__col">456</div>
-                <div class="p-statistic__col">34</div>
-                <div class="p-statistic__col">345</div>
-                <div class="p-statistic__col">1200 zł</div>
-              </div>
-              <div class="p-statistic__item">
-                <div class="p-statistic__col">12345</div>
-                <div class="p-statistic__col">
-                  <div class="p-statistic__img">
-                    <img src="images/content/product-1.jpg" alt="icon">
-                  </div>
-                  <div class="p-statistic__title">Двигатель (ДВС) Fiat Bravo 2007-2010</div>
-                </div>
-                <div class="p-statistic__col"><span>19.07.25</span> / <span>27.08.25</span></div>
-                <div class="p-statistic__col">0</div>
-                <div class="p-statistic__col">456</div>
-                <div class="p-statistic__col">34</div>
-                <div class="p-statistic__col">345</div>
-                <div class="p-statistic__col">1200 zł</div>
-              </div>
-              <div class="p-statistic__item">
-                <div class="p-statistic__col">12345</div>
-                <div class="p-statistic__col">
-                  <div class="p-statistic__img">
-                    <img src="images/content/product-1.jpg" alt="icon">
-                  </div>
-                  <div class="p-statistic__title">Двигатель (ДВС) Fiat Bravo 2007-2010</div>
-                </div>
-                <div class="p-statistic__col"><span>19.07.25</span> / <span>27.08.25</span></div>
-                <div class="p-statistic__col">0</div>
-                <div class="p-statistic__col">456</div>
-                <div class="p-statistic__col">34</div>
-                <div class="p-statistic__col">345</div>
-                <div class="p-statistic__col">1200 zł</div>
-              </div>
-
-
-
-              <div class="p-statistic__bot">
-                <div class="p-statistic__col">Итог</div>
-                <div class="p-statistic__col">23</div>
-                <div class="p-statistic__col">123</div>
-                <div class="p-statistic__col">123</div>
-                <div class="p-statistic__col">43</div>
-                <div class="p-statistic__col">3038 zł</div>
-              </div>
-
-              <nav class="pagination">
-                <ul>
-                  <li><a href="#" class="arrow prev" aria-label="Previous page"><img src="images/icons/arrow-side.svg"
-                        alt="icon"></a></li>
-                  <li><a href="#" class="page">1</a></li>
-                  <li><a href="#" class="page active">2</a></li>
-                  <li><a href="#" class="page">3</a></li>
-                  <li><a href="#" class="arrow next" aria-label="Next page"><img src="images/icons/arrow-side.svg"
-                        alt="icon"></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-
         </div>
       </section>
 
@@ -421,10 +349,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.1.0/js/datepicker.min.js"
-    integrity="sha512-BKH4s8XuxwAKFAc9tjouyxHsBiZEt/lIsYiJhFgNrFwqu/KluwHSXN2EW5r+DsQ7beF3ZEBJbfpIlqFh49Kz2w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="js/main.min.js"></script>
 </body>
