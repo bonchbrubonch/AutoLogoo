@@ -33,7 +33,6 @@
 	}
 
 	&__box {
-
 		.languege,
 		.header__box-bot {
 			display: none;
@@ -80,7 +79,7 @@
 		position: absolute;
 		background-color: #fff;
 		border-radius: 2rem;
-		padding: 2.5rem;
+		padding: .5rem 1.5rem;
 		color: #00040E;
 
 		li {
@@ -699,6 +698,11 @@
 		text-decoration-skip-ink: none;
 		text-decoration-thickness: 5.5%;
 		text-underline-offset: 19.5%;
+		cursor: pointer;
+		transition: linear .2s;
+		&:hover{
+			color: #0C8CE9;
+		}
 	}
 
 
@@ -1236,7 +1240,7 @@
 }
 
 .dss-rev {
-	padding: 3rem 0 13rem;
+	padding: 2.8rem 0 13rem;
 
 	&__inner {
 		display: flex;
