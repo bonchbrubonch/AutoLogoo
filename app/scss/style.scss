@@ -33,6 +33,7 @@
 	}
 
 	&__box {
+
 		.languege,
 		.header__box-bot {
 			display: none;
@@ -700,7 +701,8 @@
 		text-underline-offset: 19.5%;
 		cursor: pointer;
 		transition: linear .2s;
-		&:hover{
+
+		&:hover {
 			color: #0C8CE9;
 		}
 	}
@@ -2531,8 +2533,9 @@
 		}
 	}
 }
-.custom-dropdown.open{
-	.selected{
+
+.custom-dropdown.open {
+	.selected {
 		background-color: #fff !important;
 	}
 }
@@ -3695,7 +3698,17 @@
 		height: 4.4rem;
 	}
 
+	&__underform-text {
+		margin: -1.5rem 0 0 0;
+		font-size: 1.2rem;
+		color: #6A6A6A;
+		line-height: 140%
+	}
+	input:focus{
+		outline: none !important;
+	}
 }
+
 
 
 

@@ -193,10 +193,13 @@
             </ul>
             <form class="underheader__form">
               <div class="underheader__input-wrap">
-                <input type="text" placeholder="Адрес электронной почты" required>
+                <input type="text" placeholder="VIN / название запчасти" required>
               </div>
               <button class="btn"> <span>Поиск</span></button>
             </form>
+          </div>
+          <div class="underheader__side-arrow">
+            <img src="images/icons/arrow-side.svg" alt="icon">
           </div>
         </div>
       </div>
@@ -204,45 +207,33 @@
       <section class="dss-enter">
         <div class="container">
           <div class="dss-enter__item">
-            <div class="dss-enter__title">Регистрация</div>
+            <div class="dss-enter__title">Добро пожаловать</div>
             <div class="dss-enter__info">
-              <p><strong>Создайте</strong> аккаунт. Если у Вас уже есть аккаунт?</p>
-              <a href="#">Войдите</a>
+              <p>Войдите в свой аккаунт. Если у Вас еще нет аккаунта?</p>
+              <a href="#">Зарегистрироваться</a>
             </div>
             <form class="form">
-              <div class="dss-enter__top">
-                <a class="active" href="#">Как физ.лицо</a>
-                <a href="#">Как юр.лицо</a>
+              <div class="form__group">
+                <label>Email</label>
+                <input type="text" placeholder="Введите ваш email">
               </div>
-              <div class="form__twoo-col">
-                <div class="form__group">
-                  <label>Имя</label>
-                  <input type="text" placeholder="Введите Ваш имя">
-                </div>
-                <div class="form__group">
-                  <label>Email</label>
-                  <input type="text" placeholder="Введите ваш email">
-                </div>
-                <div class="form__group">
-                  <label>Пароль</label>
-                  <input type="password" placeholder="Введите пароль">
-                  <div class="pass">
-                    <img src="images/icons/watch-1.svg" alt="icon">
-                  </div>
-                </div>
-                <div class="form__group">
-                  <label>Подтвердите пароль</label>
-                  <input type="password" placeholder="Введите пароль">
-                  <div class="pass">
-                    <img src="images/icons/watch-1.svg" alt="icon">
-                  </div>
+              <div class="form__group">
+                <label>Пароль</label>
+                <input type="password" placeholder="Введите пароль">
+                <div class="pass">
+                  <img src="images/icons/watch-1.svg" alt="icon">
                 </div>
               </div>
 
               <div class="dss-enter__bot">
-                <p> Регистрируйся я даю соглашение на обработку персональных данных</p>
+                <label class="custom-checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  Название службы доставки
+                </label>
+                <a href="#">Забыли пароль?</a>
               </div>
-              <button class="btn btn--blue-twoo"> Зарегистрироваться</button>
+              <button class="btn btn--blue-twoo"><span>Войти</span></button>
             </form>
 
           </div>
