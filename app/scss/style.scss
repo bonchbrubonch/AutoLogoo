@@ -3218,11 +3218,21 @@
 	padding: 1rem;
 	height: 3rem;
 	width: fit-content;
-
+font-size: 1.2rem;
 	&--one {
-
-		background: var(--Color_Green, #00BC38);
+		background: #00BC38;
 	}
+	&--twoo {
+		background: #FF6B35;
+	}
+
+	&--three {
+		background: #B3261E;
+	}
+	&--four {
+		background: #0C8CE9;
+	}
+	
 }
 
 .dss-sales--twoo {
